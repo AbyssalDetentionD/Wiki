@@ -1,0 +1,449 @@
+---
+title: Commands Reference
+description: Complete command reference for AbyssalDetention, covering essential commands, features, and shortcuts to enhance your prison server experience.
+---
+
+# Commands Reference
+
+This comprehensive guide covers all available commands on AbyssalDetention. Commands are organized by category to help you quickly find what you need. Remember that some commands require specific ranks or permissions to use.
+
+## Essential Commands
+
+### Basic Player Commands
+
+**Information & Status:**
+
+- `/balance` or `/bal` - Check your current money
+- `/baltop` - View server money leaderboard
+- `/playtime` - See your total time played
+- `/rank` - Display your current rank and progress
+- `/info` or `/whois <player>` - View player information
+
+**Communication:**
+
+- `/msg <player> <message>` - Send private message
+- `/r <message>` - Reply to last private message
+- `/mail send <player> <message>` - Send offline message
+- `/mail read` - Read your offline messages
+- `/helpop <message>` - Send message to online staff
+
+**Navigation:**
+
+- `/spawn` - Teleport to server spawn
+- `/home` - Teleport to your home (if set)
+- `/sethome [name]` - Set a home location
+- `/delhome <name>` - Delete a home location
+- `/homes` - List all your home locations
+
+### Server Information
+
+**Rules & Help:**
+
+- `/rules` - Display server rules
+- `/help` - General help information
+- `/commands` - List available commands
+- `/discord` - Get Discord server invite
+- `/vote` - Get voting links and rewards
+- `/website` - Get server website link
+
+<Note title="Command Shortcuts">
+  Most commands have shorter aliases! For example, `/balance` can be shortened to `/bal`, and
+  `/teleport` to `/tp`.
+</Note>
+
+## Economy Commands
+
+### Money Management
+
+**Balance & Transactions:**
+
+- `/balance [player]` - Check money (yours or others)
+- `/baltop [page]` - Money leaderboard
+- `/pay <player> <amount>` - Send money to another player
+- `/eco give <player> <amount>` - Admin: Give money to player
+- `/eco take <player> <amount>` - Admin: Remove money from player
+
+**Banking:**
+
+- `/bank deposit <amount>` - Deposit money to bank account
+- `/bank withdraw <amount>` - Withdraw money from bank
+- `/bank balance` - Check bank account balance
+- `/bank interest` - View interest rate and earnings
+
+### Shop Commands
+
+**Player Shops:**
+
+- `/shop` - Teleport to main shopping area
+- `/shop create` - Create a new shop (requires license)
+- `/shop info` - View shop information and stats
+- `/shop trust <player>` - Allow player to manage your shop
+- `/shop untrust <player>` - Remove shop management access
+
+**Shopping & Trading:**
+
+- `/shopfind <item>` - Find shops selling specific items
+- `/pricecheck <item>` - Check average market prices
+- `/trade <player>` - Send trade request
+- `/trade accept` - Accept incoming trade request
+- `/trade deny` - Decline trade request
+
+## Mining & Skills Commands
+
+### Mining System
+
+**Basic Mining:**
+
+- `/mine` - Teleport to public mining areas
+- `/sellall` - Sell all sellable items in inventory
+- `/sell hand` - Sell item currently in hand
+- `/sell all <item>` - Sell all of specific item type
+
+**Mining Claims:**
+
+- `/claim` - Create a mining claim (requires payment)
+- `/claim info` - View current claim information
+- `/claim list` - List all your mining claims
+- `/claim abandon` - Abandon current claim for refund
+
+**Custom Ores:**
+
+- `/ores` - View custom ore information and locations
+- `/oretrack <ore>` - Toggle tracking for specific ore type
+- `/collection <ore>` - View ore collection progress
+
+### Skills System
+
+**Skill Information:**
+
+- `/skills` - View all your skill levels
+- `/skills <skillname>` - View specific skill details
+- `/skills top <skillname>` - View skill leaderboards
+- `/skillpoints` - Check available skill points to spend
+
+**Skill Abilities:**
+
+- `/ability <skillname>` - Toggle skill abilities on/off
+- `/inspect` - View detailed skill information for held item
+- `/mcstats` - View comprehensive skill statistics
+
+## Protection & Claims
+
+### Land Protection
+
+**Claim Management:**
+
+- `/claim` - Create a land claim with golden shovel
+- `/claim tool` - Get claiming tool (golden shovel)
+- `/claim info` - View current claim information
+- `/claims` - List all your claims
+- `/unclaim` - Remove current claim
+- `/claim blocks` - Check available claim blocks
+
+**Trust System:**
+
+- `/trust <player>` - Give full trust to player
+- `/untrust <player>` - Remove all trust from player
+- `/containertrust <player>` - Allow chest access only
+- `/accesstrust <player>` - Allow door/button access only
+- `/permissiontrust <player>` - Allow trust management
+- `/trustlist` - View all trusted players
+
+**Claim Settings:**
+
+- `/claim pvp` - Toggle PvP in current claim
+- `/claim greeting <message>` - Set claim entry message
+- `/claim farewell <message>` - Set claim exit message
+- `/subdivideclaims` - Switch to subdivision mode
+
+<Note title="Trust Levels">
+  Use the least trust level necessary! Container trust for customers, access trust for friends, full
+  trust only for close partners.
+</Note>
+
+## Ranking & Progression
+
+### Rank System
+
+**Rank Information:**
+
+- `/rank` - View your current rank and progress
+- `/ranks` - List all available ranks
+- `/rankup` - Advance to next rank (if requirements met)
+- `/prestige` - Enter prestige system (max rank required)
+
+**Progression Tracking:**
+
+- `/progress` - View detailed progression statistics
+- `/requirements` - Check requirements for next rank
+- `/achievements` - View unlocked achievements
+- `/milestones` - Track major progression milestones
+
+### Collections System
+
+**Collection Management:**
+
+- `/collections` or `/c` - View all collections
+- `/collections <category>` - View specific collection type
+- `/collections rewards` - Check available collection rewards
+- `/collections claim` - Claim collection milestone rewards
+
+## Minions & Automation
+
+### Minion Commands
+
+**Basic Minion Management:**
+
+- `/minions` - Access minion management interface
+- `/minion place <type>` - Place a specific minion type
+- `/minion pickup` - Remove minion you're looking at
+- `/minion upgrade <type>` - Upgrade minion with specific module
+- `/minion info` - View detailed minion information
+
+**Advanced Minion Features:**
+
+- `/minion collect` - Collect all items from minion storage
+- `/minion collectall` - Collect from all your minions
+- `/minion fuel <amount>` - Add fuel to minion
+- `/minion settings` - Access minion configuration menu
+
+## Teleportation & Travel
+
+### Teleportation Commands
+
+**Basic Travel:**
+
+- `/spawn` - Return to server spawn
+- `/home [name]` - Teleport to home location
+- `/sethome [name]` - Set home at current location
+- `/delhome <name>` - Delete specified home
+- `/homes` - List all your homes
+
+**Player Teleportation:**
+
+- `/tpa <player>` - Request to teleport to player
+- `/tpahere <player>` - Request player teleport to you
+- `/tpaccept` - Accept teleportation request
+- `/tpdeny` - Deny teleportation request
+- `/tpcancel` - Cancel your teleportation request
+
+**Warps (Public Locations):**
+
+- `/warps` - List all available warps
+- `/warp <name>` - Teleport to specific warp
+- `/setwarp <name>` - Staff: Create new warp
+- `/delwarp <name>` - Staff: Delete existing warp
+
+### Back & Death Commands
+
+**Return Navigation:**
+
+- `/back` - Return to previous location
+- `/suicide` - Respawn at spawn (lose items)
+- `/graveyard` - Teleport to death location (if available)
+
+## Auction House & Trading
+
+### Auction System
+
+**Basic Auction Commands:**
+
+- `/ah` or `/auction` - Open auction house interface
+- `/ah sell <price> [amount]` - List item for auction
+- `/ah bid <amount>` - Bid on current item
+- `/ah collect` - Collect sold items and payments
+- `/ah search <item>` - Search for specific items
+
+**Advanced Auction Features:**
+
+- `/ah history` - View your auction history
+- `/ah expired` - View and reclaim expired items
+- `/ah stats` - View auction house statistics
+- `/ah cancel` - Cancel your current auction
+
+### Trading Post
+
+**Order Management:**
+
+- `/tradingpost` or `/tp market` - Access trading post
+- `/tp buy <item> <amount> <price>` - Create buy order
+- `/tp sell <item> <amount> <price>` - Create sell order
+- `/tp orders` - View your active orders
+- `/tp cancel <id>` - Cancel specific order
+
+## Communication Commands
+
+### Chat & Messaging
+
+**Public Chat:**
+
+- `/local <message>` - Local area chat (default)
+- `/global <message>` - Server-wide chat
+- `/shout <message>` - Enhanced visibility message
+- `/whisper <message>` - Quieter local chat
+
+**Private Communication:**
+
+- `/msg <player> <message>` - Private message
+- `/r <message>` - Reply to last PM
+- `/ignore <player>` - Block messages from player
+- `/unignore <player>` - Unblock player messages
+
+**Group Communication:**
+
+- `/party create` - Create a party
+- `/party invite <player>` - Invite to party
+- `/party accept` - Accept party invitation
+- `/party chat <message>` - Send party message
+- `/party leave` - Leave current party
+
+<Note title="Chat Etiquette">
+  Use appropriate chat channels! Local for nearby conversations, global for server-wide topics, and
+  private messages for personal communication.
+</Note>
+
+## Staff & Moderation Commands
+
+### Player Support
+
+**Help & Reporting:**
+
+- `/helpop <message>` - Contact online staff
+- `/report <player> <reason>` - Report rule violations
+- `/ticket create <issue>` - Create support ticket
+- `/ticket list` - View your open tickets
+
+### Moderation (Staff Only)
+
+**Basic Moderation:**
+
+- `/kick <player> [reason]` - Kick player from server
+- `/ban <player> [reason]` - Ban player permanently
+- `/tempban <player> <time> [reason]` - Temporary ban
+- `/unban <player>` - Remove player ban
+- `/mute <player> [time] [reason]` - Mute player chat
+
+**Advanced Moderation:**
+
+- `/tp <player>` - Teleport to player
+- `/tp <player1> <player2>` - Teleport player to player
+- `/tphere <player>` - Teleport player to you
+- `/vanish` - Toggle invisibility mode
+- `/god` - Toggle invincibility
+
+## Utility Commands
+
+### Time & Weather
+
+**Server Information:**
+
+- `/time` - Check current server time
+- `/weather` - Check current weather
+- `/tps` - View server performance (staff)
+- `/ping` - Check your connection latency
+
+**Personal Utilities:**
+
+- `/afk` - Toggle away-from-keyboard status
+- `/clearinventory` - Clear your inventory (confirmation required)
+- `/repair` - Repair item in hand (requires permissions)
+- `/fix all` - Repair all items (requires permissions)
+
+### Item Management
+
+**Inventory Commands:**
+
+- `/invsee <player>` - View player inventory (staff)
+- `/give <player> <item> [amount]` - Give items (staff)
+- `/clear <player>` - Clear player inventory (staff)
+- `/head <player>` - Get player head item
+
+## Command Permissions
+
+### Rank-Based Access
+
+**All Ranks:**
+
+- Basic commands (balance, home, spawn, etc.)
+- Communication commands
+- Shopping and trading commands
+- Land protection basics
+
+**Guard+ Ranks:**
+
+- Advanced teleportation features
+- Enhanced trading capabilities
+- Minion management commands
+- Extended claim features
+
+**Warden+ Ranks:**
+
+- Administrative functions
+- Advanced shop management
+- Server information commands
+- Extended utility access
+
+**Staff Ranks:**
+
+- Moderation commands
+- Administrative tools
+- Server management functions
+- Player assistance commands
+
+### Special Permissions
+
+**Donor Perks:**
+
+- `/kit donor` - Special donor kit
+- `/nickname <name>` - Custom display name
+- `/workbench` - Portable crafting table
+- `/enderchest` - Remote ender chest access
+
+**VIP Features:**
+
+- `/fly` - Creative flight in claims
+- `/feed` - Restore hunger instantly
+- `/heal` - Restore health instantly
+- Additional home locations
+
+<Note title="Permission Errors">
+  If you get "insufficient permissions" errors, check your rank requirements or contact staff for
+  assistance!
+</Note>
+
+## Quick Reference
+
+### Most Used Commands
+
+**Daily Essentials:**
+
+```
+/balance - Check money
+/home - Go home
+/spawn - Go to spawn
+/sellall - Sell inventory
+/claims - Check claims
+```
+
+**Shopping & Trading:**
+
+```
+/shop - Go shopping
+/ah - Auction house
+/pay <player> <amount> - Send money
+/trade <player> - Start trade
+```
+
+**Communication:**
+
+```
+/msg <player> <message> - Private message
+/helpop <message> - Contact staff
+/discord - Get Discord link
+```
+
+---
+
+**Need help with a specific command?** Use `/help <command>` in-game for detailed information, or ask in our Discord support channels. Our community and staff are always happy to help!
+
+_Master these commands and master your prison experience._

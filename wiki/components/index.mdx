@@ -1,0 +1,153 @@
+---
+title: Components
+description: This section provides an overview of the custom components available.
+---
+
+The custom components i've defined for easy integration and development.
+
+# Outlet
+
+<Outlet path="/getting-started" />
+
+# Tabs
+
+<Tabs defaultValue="java" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="java">Java</TabsTrigger>
+    <TabsTrigger value="typescript">TypeScript</TabsTrigger>
+  </TabsList>
+  <TabsContent value="java">
+    ```java
+    // HelloWorld.java
+    public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+    }
+    ```
+  </TabsContent>
+  <TabsContent value="typescript">
+    ```typescript
+    // helloWorld.ts
+    function helloWorld(): void {
+        console.log("Hello, World!");
+    }
+    helloWorld();
+    ```
+  </TabsContent>
+</Tabs>
+
+# Table
+
+| Prop           | Type     | Default | Description                                            |
+| -------------- | -------- | ------- | ------------------------------------------------------ |
+| `defaultValue` | `string` | `null`  | The value of the tab that is selected by default.      |
+| `className`    | `string` | `""`    | Additional CSS classes for styling the Tabs component. |
+
+# Code
+
+```javascript:main.js showLineNumbers {3-4}
+function isRocketAboutToCrash() {
+    // Check if the rocket is stable
+    if (!isStable()) {
+        NoCrash(); // Prevent the crash
+    }
+}
+```
+
+# Steps
+
+<Stepper>
+  <StepperItem title="Step 1: Clone the AriaDocs Repository">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum, felis sed efficitur
+    tincidunt, justo nulla viverra enim, et maximus nunc dolor in lorem.
+  </StepperItem>
+  <StepperItem title="Step 2: Access the Project Directory">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non neque ut eros auctor
+    accumsan. Mauris a nisl vitae magna ultricies aliquam.
+  </StepperItem>
+  <StepperItem title="Step 3: Install Required Dependencies">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut ipsum nec nulla
+    ultricies porttitor et non justo.
+  </StepperItem>
+</Stepper>
+
+# Notes
+
+<Note type="note" title="Note">
+  This is a general note to convey information to the user.
+</Note>
+<Note type="danger" title="Danger">
+  This is a danger alert to notify the user of a critical issue.
+</Note>
+<Note type="warning" title="Warning">
+  This is a warning alert for issues that require attention.
+</Note>
+<Note type="success" title="Success">
+  This is a success message to inform the user of successful actions.
+</Note>
+
+# Link
+
+[Visit Forum](https://forum.abyssaldetention.com)
+
+```markdown
+[Visit Forum](https://forum.abyssaldetention.com)
+```
+
+# Image
+
+![Alt text for the image](https://via.placeholder.com/150)
+
+```markdown
+![Alt text for the image](https://via.placeholder.com/150)
+```
+
+# Files
+
+<Files
+  sorted
+  items={[
+    { type: "file", name: "package.json" },
+    { type: "file", name: "tsconfig.json" },
+    {
+      type: "folder",
+      name: "src",
+      indicator: "add",
+      children: [
+        { type: "file", name: "index.tsx" },
+        { type: "file", name: "globals.css" },
+        {
+          type: "folder",
+          name: "components",
+          isOpen: true,
+          children: [
+            { type: "file", name: "Navbar.tsx" },
+            { type: "file", name: "Footer.tsx" },
+            { type: "file", name: "Button.tsx", highlight: true },
+          ],
+        },
+      ],
+    },
+    { type: "file", name: "next.config.js" },
+    { type: "file", name: ".gitignore" },
+    { type: "folder", name: "public", indicator: "delete" },
+  ]}
+/>
+
+# Preview Image
+
+<PreviewImage
+  description={
+    <>
+      Armor are pieces of gear that consists of Helmets, Chestplates, Leggings, and Boots. This gear
+      can be worn by the player to utilize the Armor's <span className="text-[#651DB1]">Stats</span>
+      , <span className="text-yellow-400">Full Set Bonus</span>, and any other benefits it might
+      have. The <span className="text-[#651DB1]">Stats</span> and overall capabilities of Armor can
+      be upgraded in various ways.
+    </>
+  }
+  category="Equipment"
+  imageSrc="/armor.gif"
+  imageAlt="Diamond Chestplate"
+/>

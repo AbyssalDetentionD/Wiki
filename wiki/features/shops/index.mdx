@@ -1,0 +1,403 @@
+---
+title: Player Shops
+description: Build successful businesses with AbyssalDetention's comprehensive player shop system, featuring physical stores, auction houses, and trading platforms.
+---
+
+# Player Shops System
+
+The Player Shops system in AbyssalDetention allows inmates to build thriving businesses, from small corner stores to massive commercial enterprises. Whether you're selling basic supplies or rare custom ores, our comprehensive marketplace provides everything you need to succeed.
+
+## Shop System Overview
+
+### Types of Commerce
+
+**Physical Player Shops:**
+
+- Traditional storefronts with chest-based inventory
+- Located in designated commercial areas
+- Custom decoration and branding opportunities
+- Direct player-to-player transactions
+
+**Auction House:**
+
+- Server-wide bidding system for rare and valuable items
+- Automated bidding and transaction processing
+- Time-limited auctions with competitive pricing
+- Accessible from anywhere on the server
+
+**Trading Post:**
+
+- Buy/sell order matching system
+- Bulk commodity trading platform
+- Contract-based transactions
+- Market maker opportunities
+
+**Mobile Vendors:**
+
+- Portable shop systems for events and gatherings
+- Temporary market stalls and pop-up shops
+- Flexible location-based selling
+- Event-specific commerce opportunities
+
+<Note title="Shop Licensing">
+  All commercial activities require proper licensing from the Prison Commerce Authority. Licenses
+  cost varies by rank and shop type!
+</Note>
+
+## Setting Up Physical Shops
+
+### Shop Licensing & Requirements
+
+**License Types:**
+
+- **Basic Shop License:** $25,000 - 1 shop, basic items only
+- **Standard Shop License:** $75,000 - 3 shops, most items allowed
+- **Premium Shop License:** $200,000 - 5 shops, all items including rare materials
+- **Commercial Enterprise License:** $500,000 - Unlimited shops, wholesale operations
+
+**Rank Requirements:**
+
+- **Ranks A-C:** Basic license only
+- **Rank D+:** Standard license available
+- **Guard Ranks:** Premium license available
+- **Warden Ranks:** Commercial enterprise license available
+
+### Choosing Your Location
+
+**Commercial Districts:**
+
+- **Main Trading Plaza:** High foot traffic, premium plots ($100,000-500,000)
+- **Guard Quarters Market:** Mid-tier location, moderate traffic ($50,000-150,000)
+- **Prisoner Row Shops:** Budget-friendly, starter location ($10,000-50,000)
+- **Industrial District:** Bulk goods, wholesale operations ($200,000-1,000,000)
+
+**Plot Features:**
+
+- **Size Options:** 8x8 to 32x32 building areas
+- **Zoning Restrictions:** Specific rules for each district
+- **Foot Traffic Analytics:** Historical customer data available
+- **Infrastructure:** Power, water, security systems included
+
+### Shop Construction
+
+**Building Guidelines:**
+
+- **Theme Compliance:** Must fit prison commercial aesthetic
+- **Safety Standards:** Emergency exits and fire prevention required
+- **Accessibility:** Wheelchair accessible entrances and aisles
+- **Signage Rules:** Maximum sign sizes and placement restrictions
+
+**Essential Features:**
+
+- **Shop Signs:** ChestShop format for automated transactions
+- **Storage Areas:** Secure inventory management
+- **Customer Areas:** Browsing space and transaction zones
+- **Security Systems:** Anti-theft and grief protection
+
+**Shop Sign Format:**
+
+```
+[SHOP]
+<quantity>
+B <buy_price> : S <sell_price>
+<item_name>
+```
+
+**Example Shop Signs:**
+
+```
+[SHOP]           [SHOP]           [SHOP]
+64               1                32
+B 50 : S 45      B 1000 : S       B 25 : S 20
+Diamond          Custom Pickaxe    Iron Ingot
+```
+
+<Note title="Shop Sign Tips">
+  Use "S" without a price to create buy-only shops, or "B" without a price for sell-only shops.
+  Always test your signs before stocking!
+</Note>
+
+## Shop Management
+
+### Inventory Systems
+
+**Stock Management:**
+
+- **Manual Restocking:** Direct chest access for inventory updates
+- **Automated Systems:** Minion integration for continuous supply
+- **Bulk Loading:** Commands for efficient large-scale restocking
+- **Inventory Alerts:** Notifications when stock runs low
+
+**Storage Solutions:**
+
+- **Basic Chests:** Standard 27-slot storage per sign
+- **Large Chests:** 54-slot double chest storage
+- **Ender Chests:** Secure cross-location inventory access
+- **Quantum Storage:** Unlimited storage for premium shops
+
+### Pricing Strategies
+
+**Market Research:**
+
+- **Price Comparison Tools:** `/shopfind <item>` shows competitor prices
+- **Market Analytics:** Historical pricing data and trends
+- **Demand Indicators:** Real-time supply/demand metrics
+- **Profit Calculators:** Tools for optimal pricing decisions
+
+**Pricing Models:**
+
+- **Competitive Pricing:** Match or undercut competitor prices
+- **Premium Pricing:** Higher prices for superior service/location
+- **Bulk Discounts:** Volume pricing for large quantities
+- **Dynamic Pricing:** Adjust prices based on supply/demand
+
+### Customer Service
+
+**Shop Experience:**
+
+- **Clear Organization:** Logical item placement and categorization
+- **Helpful Signage:** Detailed descriptions and pricing information
+- **Customer Assistance:** Personal help and product recommendations
+- **Feedback Systems:** Customer reviews and improvement suggestions
+
+**Promotional Strategies:**
+
+- **Grand Opening Sales:** Special pricing for new shops
+- **Seasonal Promotions:** Holiday and event-based discounts
+- **Loyalty Programs:** Repeat customer rewards and benefits
+- **Bundle Deals:** Package pricing for related items
+
+## Auction House System
+
+### How Auctions Work
+
+**Creating Auctions:**
+
+- **Access:** Use `/ah` command or visit Auction House at spawn
+- **Listing Items:** Place items with starting bid and duration
+- **Reserve Prices:** Optional minimum sale price protection
+- **Auction Duration:** 1 hour to 7 days with flexible timing
+
+**Bidding Process:**
+
+- **Real-time Bidding:** Live bid updates and notifications
+- **Proxy Bidding:** Set maximum bid amounts for automatic bidding
+- **Bid Increments:** Minimum increase amounts based on current price
+- **Last-minute Extensions:** Anti-sniping protection with time extensions
+
+**Auction Categories:**
+
+- **Tools & Equipment:** Weapons, armor, and utility items
+- **Raw Materials:** Ores, blocks, and crafting components
+- **Rare Items:** Custom items, collectibles, and unique finds
+- **Bulk Goods:** Large quantities for wholesale buyers
+
+### Auction Strategies
+
+**For Sellers:**
+
+- **Timing:** List during peak hours for maximum visibility
+- **Starting Bids:** Low starting prices attract more bidders
+- **Reserve Prices:** Protect valuable items from low-ball sales
+- **Descriptions:** Detailed item information increases bids
+
+**For Buyers:**
+
+- **Research:** Check market values before bidding
+- **Bid Timing:** Strategic late bidding vs. early commitment
+- **Budget Management:** Set maximum spending limits
+- **Auction Watching:** Monitor multiple auctions simultaneously
+
+### Auction House Features
+
+**Advanced Tools:**
+
+- **Search & Filters:** Find specific items quickly
+- **Bid History:** Track bidding patterns and competition
+- **Seller Ratings:** Reputation system for trust building
+- **Notification System:** Alerts for outbids and auction endings
+
+**Fee Structure:**
+
+- **Listing Fee:** 2% of starting bid (minimum $100)
+- **Success Fee:** 5% of final sale price
+- **Failed Auction:** 50% listing fee refund
+- **Premium Features:** Enhanced listings for additional fees
+
+<Note title="Auction Tips">
+  Research completed auctions for similar items to understand market values. Don't get caught up in
+  bidding wars that exceed actual item worth!
+</Note>
+
+## Trading Post System
+
+### Order Matching Platform
+
+**Buy Orders:**
+
+- **Wanted Items:** Post what you want to purchase with price offers
+- **Quantity Specifications:** Exact amounts or minimum/maximum ranges
+- **Duration Settings:** How long orders remain active
+- **Automatic Matching:** Instant transactions when sellers meet your price
+
+**Sell Orders:**
+
+- **Available Items:** List items for sale at fixed prices
+- **Bulk Quantities:** Large amounts for wholesale transactions
+- **Flexible Pricing:** Accept best offer or fixed price only
+- **Quick Sales:** Immediate transaction when buyers meet asking price
+
+### Contract Trading
+
+**Supply Contracts:**
+
+- **Regular Delivery:** Ongoing supply agreements with consistent pricing
+- **Bulk Orders:** Large single transactions with negotiated terms
+- **Exclusive Deals:** Partnership agreements with preferred suppliers
+- **Quality Guarantees:** Service level agreements and performance standards
+
+**Business Partnerships:**
+
+- **Joint Ventures:** Collaborative business arrangements
+- **Profit Sharing:** Revenue splits for shared operations
+- **Resource Sharing:** Mutual access to materials and facilities
+- **Market Coordination:** Strategic cooperation for market influence
+
+## Mobile & Event Commerce
+
+### Temporary Shops
+
+**Event Vendors:**
+
+- **Competition Sales:** Specialized items for events and contests
+- **Seasonal Markets:** Holiday and festival-themed merchandise
+- **Location-Specific:** Mining area supplies, farming equipment
+- **Service Providers:** Repair, enchanting, and custom services
+
+**Mobile Shop Features:**
+
+- **Portable Inventory:** Easily moveable shop systems
+- **Event Integration:** Automatic setup for scheduled events
+- **Flexible Pricing:** Dynamic pricing for special situations
+- **Limited Time:** Urgency-based sales and exclusive offers
+
+### Pop-up Markets
+
+**Market Events:**
+
+- **Weekly Markets:** Regular gathering times and locations
+- **Specialty Shows:** Themed markets for specific item categories
+- **New Player Markets:** Beginner-friendly pricing and assistance
+- **Luxury Markets:** High-end items and exclusive merchandise
+
+## Shop Success Strategies
+
+### For New Shop Owners
+
+**Getting Started:**
+
+1. **Choose the Right Location:** Balance cost with foot traffic
+2. **Start Small:** Focus on essential items with steady demand
+3. **Competitive Pricing:** Research market rates before setting prices
+4. **Customer Service:** Build reputation through helpful, friendly service
+5. **Consistent Stock:** Keep popular items available at all times
+
+**Common Mistakes:**
+
+- **Overpricing:** Setting prices too high compared to competition
+- **Poor Location:** Choosing low-traffic areas to save money
+- **Inconsistent Stock:** Running out of popular items frequently
+- **Neglecting Appearance:** Unattractive or confusing shop layouts
+
+### Advanced Business Strategies
+
+**Market Specialization:**
+
+- **Niche Focus:** Become the go-to source for specific item categories
+- **Expertise Development:** Deep knowledge of your products and market
+- **Supplier Relations:** Build strong relationships with material providers
+- **Customer Education:** Help customers understand product benefits
+
+**Business Expansion:**
+
+- **Multiple Locations:** Shops in different districts for various markets
+- **Vertical Integration:** Control supply chain from production to retail
+- **Franchise Operations:** Partner with other players for brand expansion
+- **Investment Opportunities:** Finance other players' business ventures
+
+### Financial Management
+
+**Profit Optimization:**
+
+- **Cost Control:** Minimize expenses while maintaining quality
+- **Inventory Management:** Optimal stock levels to reduce waste
+- **Price Elasticity:** Understanding how price changes affect demand
+- **Cash Flow:** Managing income timing and expense scheduling
+
+**Business Analytics:**
+
+- **Sales Tracking:** Monitor best-selling items and profit margins
+- **Customer Analytics:** Understand buying patterns and preferences
+- **Market Trends:** Identify emerging opportunities and threats
+- **Performance Metrics:** KPIs for business health and growth
+
+## Shop Regulations & Support
+
+### Commerce Rules
+
+**Fair Trading Practices:**
+
+- **Honest Advertising:** Accurate item descriptions and pricing
+- **No Scamming:** Legitimate transactions and delivery fulfillment
+- **Market Manipulation:** Prohibited coordinated price fixing
+- **Quality Standards:** Items must match advertised specifications
+
+**Permitted Activities:**
+
+- **Competitive Pricing:** Undercutting competitors within reason
+- **Bulk Discounts:** Volume pricing and wholesale operations
+- **Exclusive Deals:** Preferred customer arrangements
+- **Market Research:** Price monitoring and analysis
+
+### Dispute Resolution
+
+**Customer Complaints:**
+
+- **Direct Resolution:** Work with customers to resolve issues
+- **Staff Mediation:** Moderator assistance for complex disputes
+- **Refund Policies:** Clear policies for returns and exchanges
+- **Reputation Management:** Maintain positive customer relationships
+
+**Business Conflicts:**
+
+- **Competition Disputes:** Fair resolution of business conflicts
+- **Contract Violations:** Enforcement of trading agreements
+- **Location Disputes:** Territorial and zoning conflict resolution
+- **Partnership Issues:** Resolution of joint venture problems
+
+### Support Resources
+
+**Business Development:**
+
+- **Mentorship Programs:** Experienced merchants helping newcomers
+- **Training Workshops:** Business skills and strategy education
+- **Market Research:** Economic data and trend analysis
+- **Networking Events:** Business owner meetups and collaboration
+
+**Technical Support:**
+
+- **Shop Setup Assistance:** Help with sign creation and configuration
+- **Troubleshooting:** Resolution of technical problems and bugs
+- **System Updates:** Information about new features and changes
+- **Best Practices:** Guides for optimal shop operation
+
+<Note title="Business Insurance">
+  Consider purchasing business insurance to protect against theft, grief, and market crashes.
+  Successful shops are valuable investments worth protecting!
+</Note>
+
+---
+
+**Ready to build your commercial empire?** Start with a basic shop license, choose your location wisely, and focus on customer service. Success in AbyssalDetention's marketplace rewards dedication, strategy, and community building!
+
+_In prison, a successful shop is your ticket to financial freedom._

@@ -1,0 +1,457 @@
+---
+title: Bug Reports
+description: Complete guide to reporting bugs and technical issues on AbyssalDetention, helping improve server stability and player experience for everyone.
+---
+
+# Bug Reports Guide
+
+Help us maintain AbyssalDetention's quality by reporting bugs and technical issues you encounter. Your reports directly contribute to server improvements and help create a better experience for the entire community. This guide covers how to identify, document, and report issues effectively.
+
+## Understanding Bug Reports
+
+### What Qualifies as a Bug
+
+**Server-Side Issues:**
+
+- **Plugin Malfunctions** - Features not working as intended
+- **Economy Errors** - Incorrect money calculations or shop failures
+- **Permission Problems** - Commands not working for appropriate ranks
+- **Database Issues** - Lost items, ranks, or progress without explanation
+- **Performance Problems** - Server lag, crashes, or connection issues
+
+**Gameplay Mechanics:**
+
+- **Custom Ore Issues** - Ores not spawning or dropping correctly
+- **Minion Malfunctions** - Automation not working as designed
+- **Skill System Errors** - XP not tracking or abilities not functioning
+- **Ranking Problems** - Requirements not calculating properly
+- **Protection Failures** - Claims not protecting as expected
+
+**Visual and Interface:**
+
+- **Resource Pack Glitches** - Textures not displaying correctly
+- **Menu Errors** - GUI interfaces not functioning properly
+- **Display Issues** - Information showing incorrectly
+- **Animation Problems** - Effects not playing or appearing wrong
+
+**Not Bugs:**
+
+- **Intended Game Mechanics** - Features working as designed
+- **Player Errors** - Mistakes in commands or understanding
+- **Network Issues** - Internet connection problems
+- **Client-Side Problems** - Minecraft installation or mod conflicts
+
+<Note title="When in Doubt, Report It">
+  If you're unsure whether something is a bug, report it anyway! It's better to have false reports
+  than miss real issues that affect gameplay.
+</Note>
+
+### Bug Severity Levels
+
+**Critical (Immediate Response Required):**
+
+- **Server Crashes** - Any issue causing server downtime
+- **Data Loss** - Players losing items, money, or progress
+- **Security Vulnerabilities** - Exploits allowing unauthorized access
+- **Economy Breaking** - Issues allowing infinite money or items
+
+**High Priority (24-48 Hour Response):**
+
+- **Core Feature Failures** - Major systems completely non-functional
+- **Widespread Impact** - Issues affecting many players simultaneously
+- **Progression Blocking** - Bugs preventing rank advancement or key activities
+- **Automation Failures** - Minions or shops not working correctly
+
+**Medium Priority (2-7 Days):**
+
+- **Feature Inconsistencies** - Systems working but with occasional errors
+- **Visual Problems** - Display issues that don't affect functionality
+- **Minor Calculation Errors** - Small mathematical mistakes in systems
+- **Usability Issues** - Features difficult to use but still functional
+
+**Low Priority (When Time Allows):**
+
+- **Cosmetic Issues** - Visual problems with minimal impact
+- **Quality of Life** - Minor inconveniences or missing features
+- **Documentation Errors** - Incorrect help text or information
+- **Edge Case Scenarios** - Problems only occurring in unusual situations
+
+## How to Report Bugs
+
+### Reporting Platforms
+
+**Primary Method: Forum Reports**
+
+- **Website:** [forum.abyssaldetention.com](https://forum.abyssaldetention.com/)
+- **Section:** Bug Reports category
+- **Benefits:** Public visibility, community collaboration, searchable history
+- **Best For:** Non-critical issues, detailed documentation, community discussion
+
+**Immediate Response: Discord Reports**
+
+- **Server:** AbyssalDetention Discord community
+- **Channel:** #bug-reports for general issues, #urgent-bugs for critical problems
+- **Benefits:** Real-time communication, staff notification, quick responses
+- **Best For:** Critical issues, urgent problems, time-sensitive reports
+
+**In-Game Reports:**
+
+- **Command:** `/bug <description>` for immediate staff notification
+- **Benefits:** Automatic location and player data capture
+- **Best For:** Issues occurring during gameplay, immediate problems
+- **Limitations:** Character limit, no attachment support
+
+**Emergency Contact:**
+
+- **Email:** bugs@abyssaldetention.com
+- **Use Only For:** Critical issues when other methods unavailable
+- **Response Time:** 24-48 hours (slower due to processing)
+
+### Forum Bug Report Process
+
+**Step 1: Search Existing Reports**
+
+1. Visit [forum.abyssaldetention.com](https://forum.abyssaldetention.com/)
+2. Navigate to Bug Reports section
+3. Search for keywords related to your issue
+4. Check recent reports to avoid duplicates
+5. If found, add your experience to existing report
+
+**Step 2: Create New Report**
+
+1. Click "New Topic" in Bug Reports category
+2. Use clear, descriptive title
+3. Follow required report format (detailed below)
+4. Include all relevant information and evidence
+5. Submit and monitor for staff responses
+
+**Step 3: Follow Up**
+
+1. Check back regularly for staff questions
+2. Provide additional information when requested
+3. Test proposed fixes and report results
+4. Confirm resolution when bug is fixed
+
+<Note title="Duplicate Reports">
+  Always search for existing reports before creating new ones. Adding information to existing
+  reports is more helpful than creating duplicates.
+</Note>
+
+## Bug Report Format
+
+### Required Information
+
+**Report Header:**
+
+```
+Bug Title: [Clear, descriptive summary of the issue]
+Severity: [Critical/High/Medium/Low]
+Category: [Economy/Mining/Skills/Protection/Other]
+Server Area: [Spawn/Mines/Shops/Claims/etc.]
+First Occurred: [Date and approximate time]
+```
+
+**Report Sections:**
+
+**1. Bug Description**
+
+- Clear explanation of what's happening
+- Expected behavior vs. actual behavior
+- Impact on gameplay or other players
+- Frequency of occurrence (always, sometimes, once)
+
+**2. Steps to Reproduce**
+
+- Numbered list of exact steps to trigger bug
+- Include all commands, actions, and conditions
+- Specify any requirements (rank, items, location)
+- Note if reproduction is consistent or random
+
+**3. Environment Information**
+
+- Your current rank and permissions
+- Location where bug occurred
+- Time of day (server time)
+- Other players present or involved
+- Recent server events or updates
+
+**4. Evidence**
+
+- Screenshots of the problem
+- Video recordings if applicable
+- Chat logs or command outputs
+- Error messages or unusual behavior
+
+### Example Bug Report
+
+```
+**Bug Title:** Minion not collecting custom ores automatically
+**Severity:** Medium
+**Category:** Automation
+**Server Area:** Private claims
+**First Occurred:** January 20, 2025, around 8:00 PM EST
+
+**Bug Description:**
+My Level 5 Mining Minion stops collecting Crimson Ore but continues collecting vanilla ores normally. Expected behavior is that it should collect all ore types within its range. This impacts passive income generation and requires manual collection of custom ores.
+
+**Steps to Reproduce:**
+1. Place Level 5 Mining Minion in area with mixed ore types
+2. Ensure Crimson Ore is within collection range (confirmed with /minion info)
+3. Wait for mining cycle to complete
+4. Check minion storage - vanilla ores present, Crimson Ore absent
+5. Manually break Crimson Ore - it drops normally
+
+**Environment Information:**
+- Current Rank: Guard Captain
+- Location: Personal mining claim at coordinates X: 1250, Z: -890
+- Server Time: Multiple tests between 7:00-10:00 PM EST
+- No other players in area
+- Occurred after January 15th server update
+
+**Evidence:**
+[Screenshot 1: Minion interface showing vanilla ores in storage]
+[Screenshot 2: Crimson Ore visible in mining area]
+[Screenshot 3: /minion info showing collection range including ore location]
+```
+
+## Effective Bug Reporting
+
+### Information Quality
+
+**Essential Details:**
+
+- **Exact Steps** - Precise reproduction instructions
+- **Error Messages** - Copy exact text of any error messages
+- **Screenshots** - Visual evidence of the problem
+- **Timing** - When the bug occurs and how frequently
+- **Impact** - How the bug affects you and potentially others
+
+**Helpful Context:**
+
+- **Recent Changes** - Any modifications to your setup or gameplay
+- **Similar Issues** - Related problems you've experienced
+- **Workarounds** - Any temporary solutions you've found
+- **Player Cooperation** - Other players who can confirm the issue
+
+### Screenshot Guidelines
+
+**What to Capture:**
+
+- **Error Messages** - Full error text and any error codes
+- **Interface Problems** - GUI issues, menu errors, display glitches
+- **Unexpected Behavior** - Items in wrong places, incorrect values
+- **Console Output** - Command results and system messages
+
+**Screenshot Best Practices:**
+
+- **Full Screen** - Capture entire game window when possible
+- **Clear Quality** - Ensure text is readable and details are visible
+- **Multiple Angles** - Different perspectives for complex issues
+- **Before/After** - Show expected vs. actual states when relevant
+
+### Video Evidence
+
+**When Video Helps:**
+
+- **Complex Reproduction** - Multi-step bugs difficult to explain
+- **Timing Issues** - Problems that occur over time or at specific moments
+- **Animation Errors** - Movement, particle, or effect problems
+- **Intermittent Bugs** - Issues that don't always reproduce consistently
+
+**Video Requirements:**
+
+- **Length** - Keep videos under 5 minutes when possible
+- **Quality** - Ensure clear visibility of important elements
+- **Audio** - Include game sound if relevant to the issue
+- **Platform** - Use YouTube, Streamable, or direct Discord upload
+
+<Note title="Privacy Considerations">
+  Be mindful of personal information in screenshots and videos. Blur or crop out private chat
+  messages, personal coordinates, or sensitive information.
+</Note>
+
+## Bug Investigation Process
+
+### Staff Response Timeline
+
+**Initial Acknowledgment (1-24 hours):**
+
+- Staff confirm receipt of report
+- Basic triage and severity assessment
+- Assignment to appropriate developer or admin
+- Request for additional information if needed
+
+**Investigation Period (1-14 days):**
+
+- Reproduction attempts in test environments
+- Code review and system analysis
+- Impact assessment and priority determination
+- Communication with development team if needed
+
+**Resolution Phase (Variable):**
+
+- **Critical Issues:** Immediate hotfixes when possible
+- **High Priority:** Included in next scheduled update
+- **Medium Priority:** Addressed in regular update cycles
+- **Low Priority:** Fixed when time and resources allow
+
+### Reporter Involvement
+
+**Your Role During Investigation:**
+
+- **Respond Promptly** to staff questions and requests
+- **Test Scenarios** when staff need verification
+- **Provide Updates** if the bug changes or evolves
+- **Be Patient** - complex issues take time to resolve properly
+
+**Testing Requested:**
+
+- **Reproduction Verification** - Confirm bug still exists
+- **Workaround Testing** - Try suggested temporary fixes
+- **Fix Verification** - Test when fixes are implemented
+- **Edge Case Testing** - Help ensure comprehensive solutions
+
+## Special Bug Categories
+
+### Economy and Shop Bugs
+
+**Common Issues:**
+
+- **Incorrect Pricing** - Items selling/buying at wrong values
+- **Transaction Failures** - Money not transferring properly
+- **Shop Sign Errors** - Signs not working or displaying wrong information
+- **Auction House Problems** - Bidding, collection, or listing issues
+
+**Critical Information Needed:**
+
+- **Exact Transaction Details** - Amounts, items, players involved
+- **Shop Sign Text** - Exact format and content
+- **Before/After Balances** - Money amounts before and after transactions
+- **Market Conditions** - Time of day, server population, concurrent activity
+
+### Custom Content Bugs
+
+**Resource Pack Issues:**
+
+- **Missing Textures** - Items appearing as vanilla blocks
+- **Animation Problems** - Effects not playing correctly
+- **Performance Impact** - Resource pack causing lag or crashes
+- **Compatibility Issues** - Conflicts with client modifications
+
+**Custom Feature Malfunctions:**
+
+- **Ore Generation** - Custom ores not spawning in correct locations
+- **Skill Calculations** - XP or bonuses not calculating properly
+- **Collection Tracking** - Progress not updating or displaying incorrectly
+- **Special Abilities** - Custom powers not working as intended
+
+### Automation and Minion Bugs
+
+**System Issues:**
+
+- **Collection Failures** - Items not being gathered properly
+- **Fuel Consumption** - Incorrect usage rates or efficiency
+- **Upgrade Problems** - Enhancements not applying correctly
+- **Network Issues** - Connected minions not coordinating properly
+
+**Performance Problems:**
+
+- **Server Lag** - Automation causing performance issues
+- **Memory Leaks** - Systems using excessive server resources
+- **Database Errors** - Automation data not saving properly
+- **Synchronization Issues** - Timing problems between automated systems
+
+<Note title="Automation Testing">
+  Automation bugs often require extended observation periods. Be prepared to monitor automated
+  systems for several hours or days to gather complete information.
+</Note>
+
+## After Reporting
+
+### Tracking Your Reports
+
+**Forum Reports:**
+
+- **Bookmark** your report threads for easy access
+- **Subscribe** to notifications for updates
+- **Status Tags** - Watch for status changes (Investigating, Fixed, etc.)
+- **Resolution Notes** - Read staff explanations of fixes
+
+**Discord Reports:**
+
+- **Pin Messages** to easily find your reports
+- **Follow Threads** - Use Discord's thread features for organization
+- **Status Updates** - Staff will update you on progress
+- **Testing Requests** - Be ready to help verify fixes
+
+### Bug Resolution
+
+**When Bugs Are Fixed:**
+
+- **Test Thoroughly** - Verify the fix works in multiple scenarios
+- **Report Results** - Confirm resolution or note any remaining issues
+- **Thank Contributors** - Acknowledge staff and community help
+- **Share Knowledge** - Help others who encounter similar issues
+
+**If Bugs Persist:**
+
+- **Provide Updates** - Report if issues continue after supposed fixes
+- **New Information** - Share any additional details discovered
+- **Patience** - Complex bugs may require multiple fix attempts
+- **Workarounds** - Continue using temporary solutions as needed
+
+### Community Contribution
+
+**Helping Others:**
+
+- **Share Solutions** - Post workarounds you discover
+- **Verify Reports** - Confirm other players' bug reports when possible
+- **Documentation** - Help improve bug reporting guides and examples
+- **Testing** - Participate in community testing of fixes and updates
+
+**Building Reputation:**
+
+- **Quality Reports** - Consistently helpful bug reports build trust
+- **Community Recognition** - Good reporters often receive community appreciation
+- **Beta Testing** - Active reporters may be invited to test new features
+- **Staff Relationships** - Build positive working relationships with development team
+
+## Prevention and Best Practices
+
+### Avoiding Common Issues
+
+**Regular Maintenance:**
+
+- **Update Client** - Keep Minecraft and mods current
+- **Clear Cache** - Periodically clear game and browser caches
+- **Check Permissions** - Ensure proper file and folder permissions
+- **Monitor Performance** - Watch for signs of system stress
+
+**Smart Gameplay:**
+
+- **Save Frequently** - Regular backups of important items and locations
+- **Document Changes** - Note when you modify setups or systems
+- **Test Gradually** - Implement changes slowly to identify issues
+- **Stay Informed** - Follow server updates and known issue announcements
+
+### Supporting Server Stability
+
+**Responsible Reporting:**
+
+- **Quality Over Quantity** - Focus on detailed, useful reports rather than many quick ones
+- **Follow Guidelines** - Use proper formats and channels consistently
+- **Be Constructive** - Suggest solutions when possible
+- **Stay Positive** - Maintain helpful attitude even with frustrating bugs
+
+**Community Cooperation:**
+
+- **Share Information** - Help others understand and avoid known issues
+- **Collaborate** - Work together to identify patterns and solutions
+- **Support Staff** - Understand that developers are working hard to improve the server
+- **Patience** - Complex technical issues take time to resolve properly
+
+---
+
+**Your bug reports are invaluable contributions to AbyssalDetention's continuous improvement. Thank you for helping us create the best possible prison server experience for everyone!**
+
+_Every bug you report helps make the server better for the entire community - your efforts directly contribute to everyone's enjoyment and success._

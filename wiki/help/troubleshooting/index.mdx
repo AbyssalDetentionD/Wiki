@@ -1,0 +1,504 @@
+---
+title: Troubleshooting Guide
+description: Comprehensive troubleshooting solutions for common issues on AbyssalDetention, from connection problems to gameplay glitches and performance optimization.
+---
+
+# Troubleshooting Guide
+
+Having technical difficulties with AbyssalDetention? This guide covers solutions to the most common problems players encounter. Follow these step-by-step solutions to resolve issues quickly and get back to enjoying your prison experience.
+
+## Connection Issues
+
+### Cannot Connect to Server
+
+**Error Messages:**
+
+- "Connection timed out"
+- "Unknown host"
+- "Failed to connect to server"
+- "Server is offline"
+
+**Solution Steps:**
+
+**1. Verify Server Address**
+
+- **Correct IP:** `play.abyssaldetention.com`
+- **Check for typos** - No extra spaces before or after the IP
+- **Port:** Leave blank (uses default port 25565)
+- **Copy-paste** the IP to avoid typing errors
+
+**2. Use Official Minecraft Launcher**
+
+- **Official launcher only** - Cracked or unofficial launchers may not work
+- **Download from:** [minecraft.net](https://minecraft.net)
+- **Avoid:** Third-party launchers, pirated clients, or modified launchers
+
+**3. Update Minecraft Version**
+
+- **Latest version:** Use Minecraft 1.20.4 or newer
+- **Compatible versions:** 1.20.4, 1.20.5, 1.20.6, 1.21+
+- **Update process:** Open launcher, select latest version, launch game
+
+**4. Check Internet Connection**
+
+- **Test other websites** - Ensure your internet is working
+- **Try other Minecraft servers** - Verify Minecraft connectivity
+- **Router restart** - Unplug for 30 seconds, then reconnect
+- **Wi-Fi vs. Ethernet** - Try different connection methods
+
+**5. Firewall and Security Software**
+
+- **Windows Defender** - Allow Minecraft through firewall
+- **Antivirus software** - Add Minecraft to exceptions list
+- **Network restrictions** - Check school/work network policies
+- **VPN issues** - Disable VPN and try connecting directly
+
+<Note title="Server Status Check">
+  If connection problems persist, check our Discord server for maintenance announcements or server
+  status updates before further troubleshooting.
+</Note>
+
+### Connection Drops Frequently
+
+**Symptoms:**
+
+- Getting disconnected every few minutes
+- "Timed out" messages during gameplay
+- Lag spikes followed by disconnection
+
+**Solutions:**
+
+**1. Network Stability**
+
+```
+Check network speed: Use speedtest.net
+Minimum requirements: 5 Mbps download, stable connection
+Reset router: Unplug for 30 seconds, reconnect
+Move closer to router: Improve Wi-Fi signal strength
+```
+
+**2. Minecraft Settings**
+
+- **Lower render distance** - Reduce to 8-12 chunks
+- **Disable unnecessary features** - Turn off smooth lighting, particles
+- **Allocate more RAM** - Increase to 4-6GB for better stability
+- **Close other programs** - Free up bandwidth and system resources
+
+**3. Java Configuration**
+
+- **Update Java** - Ensure latest version installed
+- **Java arguments** - Use appropriate JVM flags for performance
+- **64-bit Java** - Required for higher RAM allocation
+- **Multiple Java versions** - Ensure Minecraft uses correct version
+
+## Gameplay Issues
+
+### Stuck in Game World
+
+**Common Stuck Situations:**
+
+- Trapped in another player's claim
+- Fell into a hole or cave system
+- Teleported inside blocks or walls
+- Can't move due to lag or glitches
+
+**Immediate Solutions:**
+
+**1. Use Teleport Commands**
+
+```
+/spawn - Return to server spawn point
+/home - Teleport to your set home location
+/back - Return to previous location (if available)
+/suicide - Respawn at spawn (lose items but get unstuck)
+```
+
+**2. Contact Staff for Help**
+
+```
+/helpop I'm stuck at coordinates [F3 to see coordinates]
+/helpop Please teleport me out, I'm trapped in [location]
+```
+
+**3. Wait for Timeout**
+
+- **AFK timeout** - Stand still for 10 minutes to auto-kick
+- **Reconnect** - Join server again to respawn at spawn
+- **Last resort** - If all else fails, staff can assist
+
+### Commands Not Working
+
+**Common Issues:**
+
+- "You don't have permission" errors
+- Commands not recognized
+- Partial command functionality
+
+**Troubleshooting Steps:**
+
+**1. Check Command Syntax**
+
+```
+Correct: /balance
+Incorrect: /bal ance (space in middle)
+Correct: /msg PlayerName Hello there
+Incorrect: /msg PlayerNameHello there (missing space)
+```
+
+**2. Verify Permissions**
+
+- **Rank requirements** - Some commands require specific ranks
+- **Location restrictions** - Certain commands only work in specific areas
+- **Cooldowns** - Wait periods between command uses
+- **Plugin status** - Commands may be temporarily disabled
+
+**3. Try Alternative Commands**
+
+```
+/balance or /bal - Check money
+/home or /h - Teleport home
+/spawn or /hub - Return to spawn
+/help - List available commands
+```
+
+### Resource Pack Issues
+
+**Problems:**
+
+- Custom textures not loading
+- Items appear as vanilla blocks
+- Resource pack won't download
+- Performance issues with resource pack
+
+**Solutions:**
+
+**1. Manual Resource Pack Download**
+
+1. **Join Discord** - Use `/discord` command in-game
+2. **Find #resource-pack channel** - Download direct link
+3. **Install manually** - Place in Minecraft resource pack folder
+4. **Enable in game** - Go to Options → Resource Packs → Enable
+
+**2. Permission Issues**
+
+- **Windows Firewall** - Allow Minecraft to download files
+- **Antivirus** - Add Minecraft to exceptions
+- **Parental controls** - Disable download restrictions
+- **Network policies** - Check school/work restrictions
+
+**3. Client Configuration**
+
+```
+Clear resource pack cache:
+1. Close Minecraft completely
+2. Navigate to .minecraft/server-resource-packs/
+3. Delete AbyssalDetention folder
+4. Restart Minecraft and rejoin server
+5. Accept new download prompt
+```
+
+<Note title="Resource Pack Required">
+  The resource pack is essential for seeing custom ores and items. Without it, you'll miss valuable
+  materials that appear as generic blocks!
+</Note>
+
+## Performance Problems
+
+### Low FPS and Lag
+
+**Symptoms:**
+
+- Choppy movement and animation
+- Delayed response to actions
+- Stuttering or freezing
+
+**Optimization Solutions:**
+
+**1. Graphics Settings**
+
+```
+Video Settings Recommendations:
+- Render Distance: 8-12 chunks
+- Graphics: Fast (not Fancy)
+- Smooth Lighting: Off
+- Particles: Minimal
+- Use VSync: Off
+- Max Framerate: Unlimited or 60 FPS
+```
+
+**2. Performance Mods**
+
+- **Optifine** - Major performance improvements and additional settings
+- **Sodium** - Alternative performance mod (incompatible with Optifine)
+- **Iris** - Shader support with performance focus
+- **FPS improvement** - Can double or triple frame rates
+
+**3. System Optimization**
+
+```
+RAM Allocation:
+- 4GB minimum for basic play
+- 6-8GB recommended for smooth experience
+- 12GB+ for heavy modding (not needed for our server)
+
+Java Settings:
+- Use 64-bit Java for higher RAM allocation
+- Latest Java version for best performance
+- Appropriate JVM arguments for optimization
+```
+
+**4. Background Programs**
+
+- **Close unnecessary applications** - Web browsers, Discord, streaming software
+- **Disable startup programs** - Prevent automatic program launches
+- **Check for malware** - Scan system for performance-affecting software
+- **Update drivers** - Ensure graphics drivers are current
+
+### Server-Side Lag
+
+**Identifying Server Lag:**
+
+- All players experiencing issues simultaneously
+- Chat messages delayed for everyone
+- Block breaking/placing delays
+- Mob movement stuttering
+
+**Player Solutions:**
+
+- **Report lag** - Use `/helpop Server seems laggy` to notify staff
+- **Avoid crowded areas** - Move to less populated regions temporarily
+- **Reduce actions** - Minimize resource-intensive activities during lag
+- **Be patient** - Server lag is usually resolved quickly by staff
+
+## Client and Launcher Issues
+
+### Minecraft Won't Start
+
+**Common Startup Problems:**
+
+- Launcher crashes immediately
+- Game starts but closes after loading screen
+- Error messages during startup
+- Java-related errors
+
+**Solutions:**
+
+**1. Launcher Issues**
+
+```
+Official Launcher Problems:
+- Reinstall Minecraft Launcher from minecraft.net
+- Clear launcher cache and data
+- Run launcher as administrator
+- Check for Windows/Mac updates
+```
+
+**2. Java Problems**
+
+- **Install latest Java** - Download from java.com or adoptium.net
+- **Remove old Java versions** - Uninstall outdated installations
+- **64-bit Java required** - For modern Minecraft versions
+- **Set Java path** - Point launcher to correct Java installation
+
+**3. Game Files Corruption**
+
+```
+Clean Installation:
+1. Backup saves and resource packs
+2. Delete .minecraft folder completely
+3. Reinstall Minecraft launcher
+4. Download fresh game files
+5. Restore saves and settings
+```
+
+### Mod Conflicts
+
+**Allowed Mods:**
+
+- **Optifine** - Performance and visual improvements
+- **Minimap mods** - Navigation aids (no player/entity radar)
+- **Inventory Tweaks** - Organization and sorting
+- **JEI/REI** - Recipe and item information
+
+**Prohibited Mods:**
+
+- **X-Ray** - Reveals hidden ores and structures
+- **Fly hacks** - Unauthorized flight abilities
+- **Auto-clickers** - Automated actions
+- **Combat mods** - Unfair PvP advantages
+
+**Troubleshooting Mod Issues:**
+
+1. **Remove all mods** - Test if issues persist without modifications
+2. **Add mods one by one** - Identify problematic modifications
+3. **Check compatibility** - Ensure mods work with current Minecraft version
+4. **Update mods** - Use latest versions for best compatibility
+
+## Account and Authentication Issues
+
+### Login Problems
+
+**Cannot Login to Minecraft:**
+
+- **Microsoft account issues** - Ensure proper account linking
+- **Internet connection** - Verify stable connection for authentication
+- **Account status** - Check if account is suspended or restricted
+- **Two-factor authentication** - Complete security verification if enabled
+
+**Session Errors:**
+
+```
+"Invalid session" or "Failed to authenticate"
+Solutions:
+1. Restart Minecraft launcher completely
+2. Log out and log back into launcher
+3. Clear launcher cache
+4. Check Microsoft account status
+5. Disable VPN if using one
+```
+
+### Permission and Rank Issues
+
+**Commands Not Available:**
+
+- **Check current rank** - Use `/rank` to verify your status
+- **Rank requirements** - Some commands require specific advancement
+- **Temporary restrictions** - Recent punishments may limit access
+- **Server issues** - Permission plugins may be temporarily down
+
+**Rank Not Displaying:**
+
+- **Discord sync** - Link your Minecraft account in Discord
+- **Rejoin server** - Sometimes fixes display issues
+- **Staff assistance** - Contact support if rank appears incorrect
+- **Recent advancement** - May take a few minutes to update
+
+<Note title="Account Security">
+  Always use the official Minecraft launcher and never share your account credentials. Enable
+  two-factor authentication for additional security.
+</Note>
+
+## Advanced Troubleshooting
+
+### Network Configuration
+
+**DNS Issues:**
+
+```
+Try Alternative DNS Servers:
+- Google DNS: 8.8.8.8 and 8.8.4.4
+- Cloudflare DNS: 1.1.1.1 and 1.0.0.1
+- Quad9 DNS: 9.9.9.9
+
+How to Change DNS:
+1. Open Network Settings
+2. Change DNS to one of the above
+3. Restart computer
+4. Try connecting again
+```
+
+**Port and Firewall Configuration:**
+
+- **Minecraft port** - 25565 (default, shouldn't need changing)
+- **Firewall exceptions** - Allow Minecraft through Windows Firewall
+- **Router settings** - Enable UPnP if available
+- **Network restrictions** - Check ISP or institutional blocking
+
+### System-Level Issues
+
+**Windows-Specific:**
+
+- **Windows updates** - Ensure system is current
+- **User account control** - Run Minecraft as administrator if needed
+- **Antivirus exclusions** - Add Minecraft folder to exceptions
+- **Storage space** - Ensure adequate free disk space
+
+**Mac-Specific:**
+
+- **Gatekeeper settings** - Allow Minecraft through security settings
+- **Java installation** - May need manual Java installation
+- **Permissions** - Grant necessary file access permissions
+- **macOS updates** - Keep system updated
+
+**Linux-Specific:**
+
+- **Java package** - Install appropriate OpenJDK version
+- **Display drivers** - Ensure proper graphics driver installation
+- **Audio system** - Configure sound system for Minecraft audio
+- **File permissions** - Ensure user has access to game directories
+
+### Data Recovery and Backups
+
+**Lost Progress:**
+
+- **Server-side storage** - Most data is automatically saved server-side
+- **Contact staff** - Report lost items/progress immediately
+- **Provide details** - Exact time, location, and circumstances of loss
+- **Screenshots** - Evidence of previous progress if available
+
+**Preventing Data Loss:**
+
+- **Regular screenshots** - Document important achievements
+- **Note coordinates** - Record locations of important builds
+- **Track progress** - Monitor rank advancement and collections
+- **Multiple homes** - Set several home locations for backup
+
+## Getting Additional Help
+
+### When to Contact Staff
+
+**Immediate Staff Assistance (`/helpop`):**
+
+- Stuck in game and can't move
+- Suspected cheating or rule violations
+- Server lag or technical issues affecting gameplay
+- Urgent problems requiring immediate attention
+
+**Support Ticket Creation:**
+
+- Complex technical issues requiring investigation
+- Lost items or progress due to server problems
+- Account or permission issues
+- Detailed troubleshooting assistance needed
+
+### Information to Provide
+
+**Essential Details:**
+
+```
+When contacting support, include:
+- Exact error messages (screenshots preferred)
+- Your current rank and location
+- Steps you were taking when problem occurred
+- Your system information (OS, Java version, etc.)
+- Any recent changes to your setup
+```
+
+**Screenshots and Evidence:**
+
+- **Error messages** - Capture full error text
+- **Game state** - Show current situation or problem
+- **System info** - F3 screen for technical details
+- **Console output** - Any relevant log information
+
+### Community Resources
+
+**Discord Support:**
+
+- **#technical-help** - Community and staff technical assistance
+- **#general-support** - Basic questions and guidance
+- **#bug-reports** - Report and track technical issues
+- **Voice support** - Real-time assistance during office hours
+
+**Forum Support:**
+
+- **Technical category** - Detailed problem documentation
+- **Search function** - Find solutions to similar issues
+- **Community solutions** - Player-contributed fixes and workarounds
+- **Official announcements** - Known issues and planned fixes
+
+---
+
+**Still having problems?** Don't hesitate to ask for help! Our community and staff are always ready to assist with technical difficulties. Use `/helpop` in-game for immediate assistance or join our Discord for community support.
+
+_Remember: Most technical issues have simple solutions - start with the basics before moving to advanced troubleshooting!_
